@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'colorize'
+require 'i18n'
+require 'optparse'
+require 'find_max'
+
+::FindMax::Cli::Common.new(ARGV).execute

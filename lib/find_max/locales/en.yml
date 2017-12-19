@@ -1,0 +1,17 @@
+en:
+  help:
+      about_help:     I show a way of start of team of search
+      need_help:      (-h or --help shows available options for use)
+      use_the_sample: 'Use: cat some_file.txt | nmax Number'
+      description:    The program finds from file N of the largest numbers.
+      version_gem:    Version of gem
+
+  errors:
+       arguments:
+               empty_file:           The stream with numbers isn't provided.
+               empty_max_number:     The quantity the makismalnykh of numbers isn't established.
+               unknown_arguments:    The bigger quantity of arguments has been sent to an entrance, than it was expected.
+               incorrect_max_number: On an entrance not the number has arrived.
+
+  result:
+       title: 'Result of calculations:'
