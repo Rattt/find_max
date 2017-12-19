@@ -27,7 +27,7 @@ module FindMax
           l.call(err.call('.empty_file')) if $stdin.tty?
           l.call(err.call('.unknown_arguments')) if @args.length > 1
           l.call(err.call('.empty_max_number')) if @args.empty?
-          l.call(err.call('.incorrect_max_number')) unless is_number? @args[0]
+          l.call(err.call('.incorrect_max_number')) unless number? @args[0]
         end
         raise ArgumentError, errors.join("\n") if errors.any?
       end
