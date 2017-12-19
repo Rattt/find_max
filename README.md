@@ -1,29 +1,27 @@
-# FindMax
-
+# Testwork **Fanbox**
 [![Build Status](https://travis-ci.org/Rattt/find_max.svg?branch=master)](https://travis-ci.org/Rattt/find_max) 
 **FindMax** 
+## Level 3 Q1 Задание:
+> <https://dl.fun-box.ru/qt-ruby.pdf> 
 
-## Common description
+## Выполнение
+1. Использовал bundle для создания каркаса.
+2. Решив, что файл имеет много строк, перебираю его построчно.
+3. Создаю массив ответов и заполняю его 1выми значениями.
+4. Использую структуру сортированный список, для массива ответов.
+5. Сравниваю с наименьшим значением из массива ответов.
+6. После каждого прогона строки отсекаю лишние результаты, таким образом,
+   минимальное значение из самых больших чисел будет расти.
+7. Использую два алгаритма, когда массив результатов еще не заполнен и когда
+   заполнен.
+8. Наихудший результат будет, если массив отсортирован по возрастанию или файл
+   однострочный.
+9. При случайном заполнении работает довольно шустро.
 
-The application is console.
-The library receives a stream of numbers and quantity of the maximum numbers for search.
-Besides amount of enrollment of numbers very big.
+## Запуск
+* ```echo '9, 7, 34, 1, 2, 34, 6,  4' | nmax  4```
 
-
-## Installing
-
-  ```ruby
-  gem install 'find_max'
-  ```
-Installation is finished!
-
-
-## Usage
-
-`Use: cat some_file.txt | nmax Number` 
-
-Or
-
-` "echo 'numbers' | nmax Number"`
-
-## Thanks for watching
+## Эксплуатация
+* Гем предоставляет справку через -h.
+* Версия гема доступна через опцию -v.
+* Результаты подсвечиваются для удобства восприятия.
